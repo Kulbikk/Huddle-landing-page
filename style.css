@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    background-image: url('images/bg-desktop.svg');
+    background-color: var(--Violet);
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.logo {
+    padding-top: 70px;
+    }
+
+.header {
+    min-height: 500px;
+    margin-top: 50px;
+}
+
+.header img {
+    max-height: 500px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .text{
+    margin-left: 25px;
+}
+
+.header h1 {
+    font-size: 45px;
+}
+
+.header p {
+    font-size: 20px;
+}
+
+.btn {
+    border-radius: 25px;
+    background-color: white;
+    color: var(--Violet);
+    text-align: center;
+    margin-top: 15px;
+    padding: 15px;
+    width: 200px;
+    cursor: pointer;
+    box-shadow: 1px 4px 2px #666666;
+}
+
+
+
+.btn:hover {
+    background-color: var(--SoftMagenta);
+}
+
+.social-buttons {
+    width: 1440px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.social-button {
+    color: white;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 50%;
+    border: white solid;
+}
+
+
+@media(max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header .text {
+        margin: 30px 0;
+        justify-content: center;
+    }
+    .header img {
+        max-height: 500px;
+    }
+
+    .header h1 {
+        font-size: 25px;
+    }
+    .header p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .social-buttons {
+        max-width: 480px;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    .btnn  {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+}
